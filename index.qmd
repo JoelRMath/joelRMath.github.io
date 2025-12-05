@@ -97,7 +97,7 @@ Efficiency in mathematical modeling requires experience and willingness to learn
 
 ## Expertise and Interests
 
-A main thread is developing computationally efficient and mathematically rigorous methodologies to analyze structure and dynamics in complex systems, as well as experimental or electronic data.
+A main thread in my work is developing computationally efficient and mathematically rigorous methodologies to analyze structure and dynamics in complex systems, as well as experimental or electronic data.
 
 #### Network Analysis
 
