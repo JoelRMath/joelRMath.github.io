@@ -29,5 +29,3 @@ Data scientist, with taste for statistics and mathematics.
 
 ## Interests
 
-* [Link Text](publications.qmd#ref-axa1125)
-* `r cite_pub("axa1125")`
