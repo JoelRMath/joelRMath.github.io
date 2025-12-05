@@ -1,5 +1,4 @@
-/* css styles */
-/* --- Bibliography Highlighting --- */
+/* --- Global Link Styling (from previous steps) --- */
 
 a {
   text-decoration: none;
@@ -10,15 +9,37 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 1. Prepare the container */
+/* --- Structural Layout Overrides (25%/75% Split) --- */
+
+@media (min-width: 992px) {
+  
+  /* 1. SHRINK THE PROFILE COLUMN (Trestles Specific) */
+  .about-entity {
+      width: 25% !important; 
+      flex: 0 0 25% !important;
+  }
+  
+  /* 2. EXPAND THE MAIN CONTENT COLUMN (Trestles Specific) */
+  .about-body {
+      width: 75% !important;
+      flex: 0 0 75% !important;
+  }
+
+  /* 3. IMAGE SCALING FIX (Necessary because of the inline '20em' style) */
+  .about-image {
+      width: 100% !important; 
+      max-width: 100% !important;
+      height: auto !important;
+  }
+}
+
+/* --- Bibliography Highlighting (from previous steps) --- */
+
+/* 1. Prepare the container (must be relative for the pseudo-element) */
 div.csl-entry {
   position: relative;
-  z-index: 1; /* Ensures the text stays on top of the highlight */
-  
-  /* OPTIONAL: Fix for Sticky Navbar */
-  /* This forces the browser to stop scrolling 80px ABOVE the target */
-  /* Adjust this value if your navbar covers the text */
-  scroll-margin-top: 80px; 
+  z-index: 1; 
+  scroll-margin-top: 80px; /* Keeps target visible below sticky navbar */
 }
 
 /* 2. Create the Highlight using a Pseudo-Element */
@@ -30,27 +51,39 @@ div.csl-entry:target::before {
   top: -5px;
   bottom: -5px;
   right: -10px;
-  
-  /* This extends the yellow box to the left to cover the number/indent */
-  /* For IEEE style (numbered), -2em usually covers the [1] nicely */
-  left: -2em; 
+  left: -2em; /* Covers the numbered list indent [1] */
   
   /* Styling */
   background-color: #ffeb3b; /* Yellow */
   border-radius: 4px;
-  outline: 1px solid #fbc02d; /* Darker yellow border */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Slight shadow for pop */
+  outline: 1px solid #fbc02d; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
   
-  /* Layering: Put it BEHIND the text */
+  /* Layering & Animation */
   z-index: -1; 
-  
-  /* Animation: Optional fade in */
   animation: highlight-fade 2s ease-out;
 }
 
-/* Optional: Fade the highlight out slightly after arrival? 
-   Remove this block if you want it to stay bright yellow forever. */
 @keyframes highlight-fade {
   from { background-color: #ffeb3b; }
-  to { background-color: #fff9c4; } /* Fades to a very pale yellow */
+  to { background-color: #fff9c4; } 
+}
+
+.container {
+  max-width: 100% !important; 
+}
+
+.main-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.quarto-about-section {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.quarto-title .title {
+    font-size: 1.4rem !important; 
+    line-height: 1.1em;             
 }

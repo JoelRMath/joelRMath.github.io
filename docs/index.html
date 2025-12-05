@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>J.R. Pradines – JR. Pradines</title>
+<title>Joel R. Pradines – JR. Pradines</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a14e3238c51140e99ccc48519b6ed9ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,6 +66,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>
+:root {
+    --quarto-content-width: 1400px;
+    --bs-content-max-width: 1400px;
+}
+.main-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.container {
+    max-width: 99% !important;
+}
+
+@media (min-width: 992px) {
+  .about-entity {
+      width: 25% !important;
+      flex: 0 0 25% !important;
+  }
+  .about-body {
+      width: 75% !important;
+      flex: 0 0 75% !important;
+  }
+  .about-image { /* Keep image scaling fix */
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+  }
+}
+</style>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -132,21 +161,24 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
   <ul>
-  <li><a href="#interests" id="toc-interests" class="nav-link active" data-scroll-target="#interests">Interests</a></li>
+  <li><a href="#mathematical-modeling-and-data-analysis" id="toc-mathematical-modeling-and-data-analysis" class="nav-link active" data-scroll-target="#mathematical-modeling-and-data-analysis">Mathematical Modeling and Data Analysis</a></li>
+  <li><a href="#expertise-and-interests" id="toc-expertise-and-interests" class="nav-link" data-scroll-target="#expertise-and-interests">Expertise and Interests</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-solana column-body">
+<div class="quarto-about-trestles">
   <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
+    <img src="profile.jpg" class="about-image
+  rounded " style="width: 20em;">
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">J.R. Pradines</h1>
+<h1 class="title">Joel R. Pradines</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
-</header> <div class="about-links">
+</header>
+    <div class="about-links">
   <a href="https://github.com/joelRMath" class="about-link" rel="" target="">
     <i class="bi bi-github"></i>
      <span class="about-link-text">GitHub</span>
@@ -156,19 +188,67 @@ ul.task-list li input[type="checkbox"] {
      <span class="about-link-text">Email</span>
   </a>
 </div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
+  </div>
+  <div class="about-contents"><main class="content" id="quarto-document-content">
 
-<p>Data scientist, with taste for statistics and mathematics.</p>
-<section id="interests" class="level2">
-<h2 data-anchor-id="interests">Interests</h2>
+<section id="mathematical-modeling-and-data-analysis" class="level2">
+<h2 data-anchor-id="mathematical-modeling-and-data-analysis">Mathematical Modeling and Data Analysis</h2>
+<p>Modeling begins with formulating problems or phenomena at the level of mathematics (conceptualization). The subsequent analysis of quantitative results, or study of the model structure, can solve a problem or reveal mechanisms underlying a phenomenon.</p>
+<p>Modeling is a universal skill, utilized across fields from physics, chemistry and biology to economics and operations research. It is also the heart of statistics.</p>
+<p>Efficiency in mathematical modeling requires experience and willingness to learn, as Luenberger and Ye state<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>:</p>
+<p><em>“Skill and good judgement, with respect to problem formulation and interpretation of results, is enhanced through concrete practical experience and a thorough understanding of relevant theory….Problem formulation (i.e., modeling) itself always involves a critical tradeoff between building a mathematical model sufficiently complex to accurately capture the problem description and building a model that is tractable.”</em></p>
+</section>
+<section id="expertise-and-interests" class="level2">
+<h2 data-anchor-id="expertise-and-interests">Expertise and Interests</h2>
+<p>A main thread is developing computationally efficient and mathematically rigorous methodologies to analyze structure and dynamics in complex systems, as well as experimental or electronic data.</p>
+<section id="network-analysis" class="level4">
+<h4 data-anchor-id="network-analysis">Network Analysis</h4>
+<p>Development and applications of fast graph-based statistical methods (Edge-Count Statistics) derived in the context of the Random Graph with Given Expected Degrees (RGGED) model<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> .</p>
+<ul>
+<li><strong>Topics</strong>: Large and sparse network usage, fast network statistics based on RGGED modeling and data Analysis with prior knowledge, see publications <a href="./publications.html#ref-JCB" target="_blank">[15]</a>, <a href="./publications.html#ref-recomb" target="_blank">[13]</a> and the subsequent EdgeCount R package<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</li>
+<li><strong>Applications</strong>: Development of the Pathway Resource &amp; Information System (PARIS) <a href="./publications.html#ref-PARIS" target="_blank">[16]</a>, identification of community structures in networks <a href="./publications.html#ref-Prot" target="_blank">[14]</a>, target discovery and enhancement of result reproducibility <a href="./publications.html#ref-WAP" target="_blank">[4]</a></li>
+<li><strong>Programming</strong>: R (Package Development), Java</li>
+</ul>
+</section>
+<section id="applied-mathematics-and-optimization" class="level4">
+<h4 data-anchor-id="applied-mathematics-and-optimization">Applied Mathematics and Optimization</h4>
+<p>Contributions to mathematical and numerical methods necessary for solving high-dimensional problems.</p>
+<ul>
+<li><strong>Topics</strong>: Constrained Optimization (quadratic programming, linear programming, heuristics), maximum entropy modeling, solutions to nonlinear algebraic systems.</li>
+<li><strong>Publications</strong>: Characterization of complex molecular mixtures <a href="./publications.html#ref-HS" target="_blank">[7]</a> and their rerverse engineering for multiple sclerosis <a href="./publications.html#ref-Equi" target="_blank">[11]</a>, and solutions to complex ligand-protein systems <a href="./publications.html#ref-MathB" target="_blank">[19]</a>.</li>
+<li><strong>Programming</strong>: Java</li>
+</ul>
+</section>
+<section id="stochastic-and-excitable-dynamical-systems" class="level4">
+<h4 data-anchor-id="stochastic-and-excitable-dynamical-systems">Stochastic and Excitable Dynamical Systems</h4>
+<p>Novel work in theoretical physics and mathematical biology, focusing on stochastic noise, resonance, and rhythmic biological processes.</p>
+<ul>
+<li><strong>Topics</strong>: Coherence resonance, stochastic differential equations (Fokker Planck and Langevin), nonlinear dynamical systems, stability analysis and bifurcations</li>
+<li><strong>Publications</strong>: noise and network-based genesis of the respiratory rhythm <a href="./publications.html#ref-PRE" target="_blank">[22]</a><a href="./publications.html#ref-NN" target="_blank">[23]</a>, noise-based switches for gene expression <a href="./publications.html#ref-PNAS" target="_blank">[20]</a>, the essential role of slow and fast dynamics in coherence resonance <a href="./publications.html#ref-CR" target="_blank">[21]</a>.</li>
+<li><strong>Programming</strong>: C</li>
+</ul>
+</section>
+<section id="translational-and-clinical-data-analysis" class="level4">
+<h4 data-anchor-id="translational-and-clinical-data-analysis">Translational and Clinical Data Analysis</h4>
+<p>Statistical analyses.</p>
+<ul>
+<li><strong>Topics</strong>: Data analysis and predictive modeling.</li>
+<li><strong>Publications</strong>: H1N1 vaccination responses <a href="./publications.html#ref-HIRD" target="_blank">[9]</a>, drug equivalence <a href="./publications.html#ref-Gexp" target="_blank">[12]</a> and treatment responses in Long COVID <a href="./publications.html#ref-axa1125" target="_blank">[1]</a>.</li>
+<li><strong>Programming</strong>: R</li>
+</ul>
 
 
 </section>
-</main></div>
-    </div>
-    <img src="profile.jpg" class="about-image
-  rounded " style="width: 15em;">
-  </div>
+</section>
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><strong>Luenberger, D, and Ye, Y.</strong> <em>Linear and Nonlinear Programming</em>, 5th ed.&nbsp;(Springer, 2021). <a href="https://doi.org/10.1007/978-3-030-59322-2" target="_blank">[Link to Book]</a>:<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><strong>Chung, F and Lu, L.</strong> <em>The average distances in random graphs with given expected degrees</em>. (2002) PNAS, 99(25);15879–15882. <a href="https://doi.org/10.1073/pnas.252631999" target="_blank">[link to Article]</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><strong>Pradines, J.</strong> <em>EdgeCount: A package for Edge-Count based analyses.</em> (2025). <a href="https://joelrmath.github.io/EdgeCount/" target="_blank">[Link to Package]</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main></div>
 </div>
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

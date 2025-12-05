@@ -1,8 +1,12 @@
 ---
-title: "J.R. Pradines"
+title: "Joel R. Pradines"
+
+# ====================================================
+# ABOUT SECTION METADATA 
+# ====================================================
 about:
-  template: solana      # Options: jolla, trestles, solana, broadside
-  image: profile.jpg   # If you have a photo, put it in the folder and name it this
+  template: trestles
+  image: profile.jpg
   links:
     - icon: github
       text: GitHub
@@ -10,6 +14,61 @@ about:
     - icon: envelope
       text: Email
       href: mailto:joelrmath@gmail.com
+toc: true
+# ====================================================
+# FORMAT SECTION (Cleaned - No Inline CSS)
+# ====================================================
+format:
+  html:
+    theme: trestles
+    main-content-width: 95%
+    include-in-header: 
+      - text: |
+          <style>
+          :root {
+              --quarto-content-width: 1400px; 
+              --bs-content-max-width: 1400px;
+          }
+          .main-container {
+              padding-left: 0 !important;
+              padding-right: 0 !important;
+          }
+          .container {
+              max-width: 99% !important;
+          }
+          
+          @media (min-width: 992px) {
+            .about-entity {
+                width: 25% !important; 
+                flex: 0 0 25% !important;
+            }
+            .about-body {
+                width: 75% !important;
+                flex: 0 0 75% !important;
+            }
+            .about-image { /* Keep image scaling fix */
+                width: 100% !important; 
+                max-width: 100% !important;
+                height: auto !important;
+            }
+          }
+          </style>
+
+# ====================================================
+# WEBSITE NAVIGATION
+# ====================================================
+website:
+  title: "Joel R. Pradines"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: publications.qmd
+        text: Publications
+      - text: Software
+        menu:
+          - text: "EdgeCount Package"
+            href: https://joelRMath.github.io/EdgeCount/
 ---
 
 ```{r, echo=FALSE, message=FALSE}
@@ -21,11 +80,59 @@ cite_pub <- function(key) {
   idx <- which(keys == key)
   
   if (length(idx) == 0) return(paste0("[Unknown: ", key, "]"))
-  return(paste0("[[", idx, "]](publications.qmd#ref-", key, ")"))
+  return(paste0("[[", idx, "]](publications.qmd#ref-", key, "){target=\"_blank\"}"))
 }
 ```
 
-Data scientist, with taste for statistics and mathematics.
+## Mathematical Modeling and Data Analysis
 
-## Interests
+Modeling begins with formulating problems or phenomena at the level of mathematics (conceptualization). The subsequent analysis of quantitative results, or study of the model structure, can solve a problem or reveal mechanisms underlying a phenomenon.
 
+Modeling is a universal skill, utilized across fields from physics, chemistry and biology to economics and operations research. It is also the heart of statistics.
+
+Efficiency in mathematical modeling requires experience and willingness to learn, as Luenberger and Ye state[^note1]:
+
+*"Skill and good judgement, with respect to problem formulation and interpretation of results, is enhanced through concrete practical experience and a thorough understanding of relevant theory....Problem formulation (i.e., modeling) itself always involves a critical tradeoff between building a mathematical model sufficiently complex to accurately capture the problem description and building a model that is tractable."*
+
+
+## Expertise and Interests
+
+A main thread is developing computationally efficient and mathematically rigorous methodologies to analyze structure and dynamics in complex systems, as well as experimental or electronic data.
+
+#### Network Analysis
+
+Development and applications of fast graph-based statistical methods (Edge-Count Statistics) derived in the context of the Random Graph with Given Expected Degrees (RGGED) model[^note2] .
+
+- **Topics**: Large and sparse network usage, fast network statistics based on RGGED modeling and data Analysis with prior knowledge, see publications `r cite_pub("JCB")`, `r cite_pub("recomb")` and the subsequent EdgeCount R package[^note3].
+- **Applications**: Development of the Pathway Resource & Information System (PARIS) `r cite_pub("PARIS")`, identification of community structures in networks `r cite_pub("Prot")`, target discovery and enhancement of result reproducibility `r cite_pub("WAP")` 
+- **Programming**: R (Package Development), Java
+
+#### Applied Mathematics and Optimization
+
+Contributions to mathematical and numerical methods necessary for solving high-dimensional problems.
+
+- **Topics**: Constrained Optimization (quadratic programming,  linear programming, heuristics), maximum entropy modeling, solutions to nonlinear algebraic systems.
+- **Publications**: Characterization of complex molecular mixtures `r cite_pub("HS")` and their rerverse engineering for multiple sclerosis `r cite_pub("Equi")`, and solutions to complex ligand-protein systems `r cite_pub("MathB")`.
+- **Programming**: Java
+
+#### Stochastic and Excitable Dynamical Systems
+
+Novel work in theoretical physics and mathematical biology, focusing on stochastic noise, resonance, and rhythmic biological processes.
+
+- **Topics**: Coherence resonance, stochastic differential equations (Fokker Planck and Langevin), nonlinear dynamical systems, stability analysis and bifurcations
+- **Publications**: noise and network-based genesis of the respiratory rhythm `r cite_pub("PRE")``r cite_pub("NN")`, noise-based switches for gene expression `r cite_pub("PNAS")`, the essential role of slow and fast dynamics in coherence resonance `r cite_pub("CR")`.
+- **Programming**: C
+
+#### Translational and Clinical Data Analysis
+
+Statistical analyses.
+
+- **Topics**: Data analysis and predictive modeling.
+- **Publications**: H1N1 vaccination responses `r cite_pub("HIRD")`, drug equivalence `r cite_pub("Gexp")` and treatment responses in Long COVID `r cite_pub("axa1125")`.
+- **Programming**: R
+
+[^note1]: **Luenberger, D, and Ye, Y.** *Linear and Nonlinear Programming*, 5th ed. (Springer, 2021). [[Link to Book]](https://doi.org/10.1007/978-3-030-59322-2){target="_blank"}:
+
+[^note2]: **Chung, F and Lu, L.** *The average distances in random graphs with given expected degrees*. (2002) PNAS, 99(25);15879--15882. [[link to Article]](https://doi.org/10.1073/pnas.252631999){target="_blank"}
+
+[^note3]: **Pradines, J.** *EdgeCount: A package for Edge-Count based analyses.* (2025). [[Link to Package]](https://joelrmath.github.io/EdgeCount/){target="_blank"}
