@@ -1,7 +1,9 @@
 project:
   type: website
   output-dir: docs
-
+  resources:
+    - pdfs/
+    
 bibliography: references.bib
 csl: ieee.csl
 
