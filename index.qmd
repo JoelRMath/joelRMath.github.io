@@ -134,9 +134,9 @@ Statistical analyses.
 
 ## Education
 
-- Ph.D. in Biomathematics [University Paris 6]
-- Post M.S. in Biomathematics, Biostatistics & Bioinformatics [University Paris 7]
-- M.S. in Biochemistry [University Paris 7]
+- Ph.D. Biomathematics [Paris 6, France]
+- M.S. Biomathematics, Biostatistics & Bioinformatics [Paris 7, France]
+- M.S. Biochemistry [Paris 7, France]
 
 [^note1]: **Luenberger, D, and Ye, Y.** *Linear and Nonlinear Programming*, 5th ed. (Springer, 2021). [[Link to Book]](https://doi.org/10.1007/978-3-030-59322-2){target="_blank"}:
 
