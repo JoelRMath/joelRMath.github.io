@@ -131,6 +131,13 @@ Statistical analyses.
 - **Publications**: H1N1 vaccination responses `r cite_pub("HIRD")`, drug equivalence `r cite_pub("Gexp")` and treatment responses in Long COVID `r cite_pub("axa1125")`.
 - **Programming**: R
 
+
+## Education
+
+- Ph.D. in Biomathematics [University Paris 6]
+- Post M.S. in Biomathematics, Biostatistics & Bioinformatics [University Paris 7]
+- M.S. in Biochemistry [University Paris 7]
+
 [^note1]: **Luenberger, D, and Ye, Y.** *Linear and Nonlinear Programming*, 5th ed. (Springer, 2021). [[Link to Book]](https://doi.org/10.1007/978-3-030-59322-2){target="_blank"}:
 
 [^note2]: **Chung, F and Lu, L.** *The average distances in random graphs with given expected degrees*. (2002) PNAS, 99(25);15879--15882. [[link to Article]](https://doi.org/10.1073/pnas.252631999){target="_blank"}
