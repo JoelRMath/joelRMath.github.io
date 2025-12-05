@@ -1,0 +1,33 @@
+---
+title: "J.R. Pradines"
+about:
+  template: solana      # Options: jolla, trestles, solana, broadside
+  image: profile.jpg   # If you have a photo, put it in the folder and name it this
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/joelRMath
+    - icon: envelope
+      text: Email
+      href: mailto:joelrmath@gmail.com
+---
+
+```{r, echo=FALSE, message=FALSE}
+bib_lines <- readLines("references.bib")
+keys <- gsub("^@.*\\{(.*),.*", "\\1", grep("^@", bib_lines, value = TRUE))
+
+cite_pub <- function(key) {
+  
+  idx <- which(keys == key)
+  
+  if (length(idx) == 0) return(paste0("[Unknown: ", key, "]"))
+  return(paste0("[[", idx, "]](publications.qmd#ref-", key, ")"))
+}
+```
+
+Data scientist, with taste for statistics and mathematics.
+
+## Interests
+
+* [Link Text](publications.qmd#ref-axa1125)
+* `r cite_pub("axa1125")`

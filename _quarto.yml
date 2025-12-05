@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+
+bibliography: references.bib
+csl: ieee.csl
+
+website:
+  title: "JR. Pradines"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: publications.qmd
+        text: Publications
+      - text: Software
+        menu:
+          - text: "EdgeCount Package"
+            href: https://joelRMath.github.io/EdgeCount/
+      - icon: github
+        href: https://github.com/joelRMath
+      - icon: envelope
+        href: mailto:joelrmath@gmail.com
+
+format:
+  html:
+    theme: cosmo  
+    css: styles.css
+    toc: true
+
+
+

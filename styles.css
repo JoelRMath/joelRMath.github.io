@@ -1,0 +1,56 @@
+/* css styles */
+/* --- Bibliography Highlighting --- */
+
+a {
+  text-decoration: none;
+  color: #007bff; 
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 1. Prepare the container */
+div.csl-entry {
+  position: relative;
+  z-index: 1; /* Ensures the text stays on top of the highlight */
+  
+  /* OPTIONAL: Fix for Sticky Navbar */
+  /* This forces the browser to stop scrolling 80px ABOVE the target */
+  /* Adjust this value if your navbar covers the text */
+  scroll-margin-top: 80px; 
+}
+
+/* 2. Create the Highlight using a Pseudo-Element */
+div.csl-entry:target::before {
+  content: "";
+  position: absolute;
+  
+  /* Sizing the box */
+  top: -5px;
+  bottom: -5px;
+  right: -10px;
+  
+  /* This extends the yellow box to the left to cover the number/indent */
+  /* For IEEE style (numbered), -2em usually covers the [1] nicely */
+  left: -2em; 
+  
+  /* Styling */
+  background-color: #ffeb3b; /* Yellow */
+  border-radius: 4px;
+  outline: 1px solid #fbc02d; /* Darker yellow border */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Slight shadow for pop */
+  
+  /* Layering: Put it BEHIND the text */
+  z-index: -1; 
+  
+  /* Animation: Optional fade in */
+  animation: highlight-fade 2s ease-out;
+}
+
+/* Optional: Fade the highlight out slightly after arrival? 
+   Remove this block if you want it to stay bright yellow forever. */
+@keyframes highlight-fade {
+  from { background-color: #ffeb3b; }
+  to { background-color: #fff9c4; } /* Fades to a very pale yellow */
+}
