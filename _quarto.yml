@@ -8,7 +8,7 @@ bibliography: references.bib
 csl: ieee.csl
 
 website:
-  title: "JR. Pradines"
+  title: "Joel R. P."
   navbar:
     right:
       - href: index.qmd
