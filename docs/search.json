@@ -9,35 +9,35 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Joel R. Pradines",
+    "title": "Joel R. P.",
     "section": "",
     "text": "Modeling begins with formulating problems or phenomena at the level of mathematics (conceptualization). The subsequent analysis of quantitative results, or study of the model structure, can solve a problem or reveal mechanisms underlying a phenomenon.\nModeling is a universal skill, utilized across fields from physics, chemistry and biology to economics and operations research. It is also the heart of statistics.\nEfficiency in mathematical modeling requires experience and willingness to learn, as Luenberger and Ye state1:\n“Skill and good judgement, with respect to problem formulation and interpretation of results, is enhanced through concrete practical experience and a thorough understanding of relevant theory….Problem formulation (i.e., modeling) itself always involves a critical tradeoff between building a mathematical model sufficiently complex to accurately capture the problem description and building a model that is tractable.”"
   },
   {
     "objectID": "index.html#mathematical-modeling-and-data-analysis",
     "href": "index.html#mathematical-modeling-and-data-analysis",
-    "title": "Joel R. Pradines",
+    "title": "Joel R. P.",
     "section": "",
     "text": "Modeling begins with formulating problems or phenomena at the level of mathematics (conceptualization). The subsequent analysis of quantitative results, or study of the model structure, can solve a problem or reveal mechanisms underlying a phenomenon.\nModeling is a universal skill, utilized across fields from physics, chemistry and biology to economics and operations research. It is also the heart of statistics.\nEfficiency in mathematical modeling requires experience and willingness to learn, as Luenberger and Ye state1:\n“Skill and good judgement, with respect to problem formulation and interpretation of results, is enhanced through concrete practical experience and a thorough understanding of relevant theory….Problem formulation (i.e., modeling) itself always involves a critical tradeoff between building a mathematical model sufficiently complex to accurately capture the problem description and building a model that is tractable.”"
   },
   {
     "objectID": "index.html#expertise-and-interests",
     "href": "index.html#expertise-and-interests",
-    "title": "Joel R. Pradines",
+    "title": "Joel R. P.",
     "section": "Expertise and Interests",
     "text": "Expertise and Interests\nA main thread in my work is developing computationally efficient and mathematically rigorous methodologies to analyze structure and dynamics in complex systems, as well as experimental or electronic data.\n\nNetwork Analysis\nDevelopment and applications of fast graph-based statistical methods (Edge-Count Statistics) derived in the context of the Random Graph with Given Expected Degrees (RGGED) model2 .\n\nTopics: Large and sparse network usage, fast network statistics based on RGGED modeling and data Analysis with prior knowledge, see publications [15], [13] and the subsequent EdgeCount R package3.\nApplications: Development of the Pathway Resource & Information System (PARIS) [16], identification of community structures in networks [14], target discovery and enhancement of result reproducibility [4]\nProgramming: R (Package Development), Java\n\n\n\nApplied Mathematics and Optimization\nContributions to mathematical and numerical methods necessary for solving high-dimensional problems.\n\nTopics: Constrained Optimization (quadratic programming, linear programming, heuristics), maximum entropy modeling, solutions to nonlinear algebraic systems.\nPublications: Characterization of complex molecular mixtures [7] and their rerverse engineering for multiple sclerosis [11], and solutions to complex ligand-protein systems [19].\nProgramming: Java\n\n\n\nStochastic and Excitable Dynamical Systems\nNovel work in theoretical physics and mathematical biology, focusing on stochastic noise, resonance, and rhythmic biological processes.\n\nTopics: Coherence resonance, stochastic differential equations (Fokker Planck and Langevin), nonlinear dynamical systems, stability analysis and bifurcations\nPublications: noise and network-based genesis of the respiratory rhythm [22][23], noise-based switches for gene expression [20], the essential role of slow and fast dynamics in coherence resonance [21].\nProgramming: C\n\n\n\nTranslational and Clinical Data Analysis\nStatistical analyses.\n\nTopics: Data analysis and predictive modeling.\nPublications: H1N1 vaccination responses [9], drug equivalence [12] and treatment responses in Long COVID [1].\nProgramming: R"
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
-    "title": "Joel R. Pradines",
+    "title": "Joel R. P.",
     "section": "Education",
     "text": "Education\n\nPh.D. Biomathematics [Paris 6, France]\nM.S. Biomathematics, Biostatistics & Bioinformatics [Paris 7, France]\nM.S. Biochemistry [Paris 7, France]"
   },
   {
     "objectID": "index.html#footnotes",
     "href": "index.html#footnotes",
-    "title": "Joel R. Pradines",
+    "title": "Joel R. P.",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nLuenberger, D, and Ye, Y. Linear and Nonlinear Programming, 5th ed. (Springer, 2021). [Link to Book]:↩︎\nChung, F and Lu, L. The average distances in random graphs with given expected degrees. (2002) PNAS, 99(25);15879–15882. [link to Article]↩︎\nPradines, J. EdgeCount: A package for Edge-Count based analyses. (2025). [Link to Package]↩︎"
   },
