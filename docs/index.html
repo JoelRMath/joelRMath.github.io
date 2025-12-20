@@ -275,6 +275,27 @@ ul.task-list li input[type="checkbox"] {
 </section></div></main></div>
 </div>
  <!-- /main -->
+<button id="back-to-top" title="Back to Top">↑</button>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const btn = document.getElementById("back-to-top");
+  
+  if (btn) {
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 400) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    });
+
+    btn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

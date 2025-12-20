@@ -28,6 +28,7 @@ format:
   html:
     theme: cosmo  
     css: styles.css
+    include-after-body: footer.html
     toc: true
 
 

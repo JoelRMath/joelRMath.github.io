@@ -155,3 +155,4 @@ I enjoy fostering a culture of collaborative problem-solving.
 [^note2]: **Chung, F and Lu, L.** *The average distances in random graphs with given expected degrees*. (2002) PNAS, 99(25);15879--15882. [[link to Article]](https://doi.org/10.1073/pnas.252631999){target="_blank"}
 
 [^note3]: **Pradines, J.** *EdgeCount: A package for Edge-Count based analyses.* (2025). [[Link to Package]](https://joelrmath.github.io/EdgeCount/){target="_blank"}
+
