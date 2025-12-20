@@ -92,8 +92,11 @@ Modeling is a universal skill, utilized across fields from physics, chemistry an
 
 Efficiency in mathematical modeling requires experience and willingness to learn, as Luenberger and Ye state[^note1]:
 
-*"Skill and good judgement, with respect to problem formulation and interpretation of results, is enhanced through concrete practical experience and a thorough understanding of relevant theory....Problem formulation (i.e., modeling) itself always involves a critical tradeoff between building a mathematical model sufficiently complex to accurately capture the problem description and building a model that is tractable."*
+::: {.clean-quote}
+"Skill and good judgement, with respect to problem formulation and interpretation of results, is enhanced through concrete practical experience and a thorough understanding of relevant theory....Problem formulation (i.e., modeling) itself always involves a critical tradeoff between building a mathematical model sufficiently complex to accurately capture the problem description and building a model that is tractable."
+:::
 
+I am inherently multidisciplinary and enjoy tackling novel problem types. A rigorous, and also often creative, mathematical formulation allows for the translation of complex phenomena into actionable insights across diverse scientific domains.
 
 ## Expertise and Interests
 
@@ -103,24 +106,24 @@ A main thread in my work is developing computationally efficient and mathematica
 
 Development and applications of fast graph-based statistical methods (Edge-Count Statistics) derived in the context of the Random Graph with Given Expected Degrees (RGGED) model[^note2] .
 
-- **Topics**: Large and sparse network usage, fast network statistics based on RGGED modeling and data Analysis with prior knowledge, see publications `r cite_pub("JCB")`, `r cite_pub("recomb")` and the subsequent EdgeCount R package[^note3].
-- **Applications**: Development of the Pathway Resource & Information System (PARIS) `r cite_pub("PARIS")`, identification of community structures in networks `r cite_pub("Prot")`, target discovery and enhancement of result reproducibility `r cite_pub("WAP")` 
-- **Programming**: R (Package Development), Java
+- **Topics**: Large and sparse network usage, fast network statistics based on RGGED modeling and data Analysis with prior knowledge, see publications `r cite_pub("JCB")`- `r cite_pub("recomb")` and the subsequent EdgeCount R package[^note3].
+- **Applications**: Development of the Pathway Resource & Information System (PARIS) `r cite_pub("PARIS")`-`r cite_pub("BB")`-`r cite_pub("BIOIT")`, identification of community structures in networks `r cite_pub("Prot")`, target discovery and enhancement of result reproducibility `r cite_pub("WAP")` 
+- **Programming**: R, R Package Development, R-shiny, Rmd and Java
 
 #### Applied Mathematics and Optimization
 
 Contributions to mathematical and numerical methods necessary for solving high-dimensional problems.
 
 - **Topics**: Constrained Optimization (quadratic programming,  linear programming, heuristics), maximum entropy modeling, solutions to nonlinear algebraic systems.
-- **Publications**: Characterization of complex molecular mixtures `r cite_pub("HS")` and their rerverse engineering for multiple sclerosis `r cite_pub("Equi")`, and solutions to complex ligand-protein systems `r cite_pub("MathB")`.
-- **Programming**: Java
+- **Publications**: Characterization of complex molecular mixtures `r cite_pub("HS")`- `r cite_pub("HSS")`-`r cite_pub("HSE")` and their reverse engineering for multiple sclerosis `r cite_pub("Equi")`, and solutions to complex ligand-protein systems `r cite_pub("MathB")`.
+- **Programming**: Java and C
 
 #### Stochastic and Excitable Dynamical Systems
 
 Novel work in theoretical physics and mathematical biology, focusing on stochastic noise, resonance, and rhythmic biological processes.
 
 - **Topics**: Coherence resonance, stochastic differential equations (Fokker Planck and Langevin), nonlinear dynamical systems, stability analysis and bifurcations
-- **Publications**: noise and network-based genesis of the respiratory rhythm `r cite_pub("PRE")``r cite_pub("NN")`, noise-based switches for gene expression `r cite_pub("PNAS")`, the essential role of slow and fast dynamics in coherence resonance `r cite_pub("CR")`.
+- **Publications**: Noise and network-based genesis of the respiratory rhythm `r cite_pub("PRE")`-`r cite_pub("NN")`-`r cite_pub("Bios1")`-`r cite_pub("Bios2")`, noise-based switches for gene expression `r cite_pub("PNAS")`, the essential role of slow and fast dynamics in coherence resonance `r cite_pub("CR")`.
 - **Programming**: C
 
 #### Translational and Clinical Data Analysis
@@ -128,9 +131,18 @@ Novel work in theoretical physics and mathematical biology, focusing on stochast
 Statistical analyses.
 
 - **Topics**: Data analysis and predictive modeling.
-- **Publications**: H1N1 vaccination responses `r cite_pub("HIRD")`, drug equivalence `r cite_pub("Gexp")` and treatment responses in Long COVID `r cite_pub("axa1125")`.
-- **Programming**: R
+- **Publications**: H1N1 vaccination responses `r cite_pub("HIRD")`, drug equivalence `r cite_pub("Gexp")`, systemic sclerosis`r cite_pub("BioM")`-`r cite_pub("ACR17")`-`r cite_pub("PEGS")`-`r cite_pub("WAPpatent")`, and treatment responses in Long COVID `r cite_pub("axa1125")`.
+- **Programming**: R and Java
 
+### Mentorship & Leadership
+
+I enjoy fostering a culture of collaborative problem-solving.
+
+- **Mentorship**: Directly mentored two Postdoctoral researchers and three MIT Electrical Engineering interns.
+
+- **Leadership**: Built and led a computational biology team, organized and led weekly brainstorming meetings with focus on learning and problem solving.
+
+- **Cross-Functional Collaboration**: Experienced in leading multidisciplinary teams and projects.
 
 ## Education
 
