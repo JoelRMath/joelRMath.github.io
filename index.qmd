@@ -67,8 +67,10 @@ website:
         text: Publications
       - text: Software
         menu:
-          - text: "EdgeCount Package"
+          - text: "EdgeCount Package (R)"
             href: https://joelRMath.github.io/EdgeCount/
+          - "Heparan Sulfate (Java)"
+            href: https://joelRMath.github.io/heparan-sulfate/
 ---
 
 ```{r, echo=FALSE, message=FALSE}
