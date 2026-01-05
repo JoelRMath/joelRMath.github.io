@@ -1,9 +1,8 @@
 ---
-title: "Joel R. P."
+title: "Joel R. Pradines"
 
-# ====================================================
-# ABOUT SECTION METADATA 
-# ====================================================
+page-layout: full
+
 about:
   template: trestles
   image: profile.jpg
@@ -15,62 +14,6 @@ about:
       text: Email
       href: mailto:joelrmath@gmail.com
 toc: true
-# ====================================================
-# FORMAT SECTION (Cleaned - No Inline CSS)
-# ====================================================
-format:
-  html:
-    theme: trestles
-    main-content-width: 95%
-    include-in-header: 
-      - text: |
-          <style>
-          :root {
-              --quarto-content-width: 1400px; 
-              --bs-content-max-width: 1400px;
-          }
-          .main-container {
-              padding-left: 0 !important;
-              padding-right: 0 !important;
-          }
-          .container {
-              max-width: 99% !important;
-          }
-          
-          @media (min-width: 992px) {
-            .about-entity {
-                width: 25% !important; 
-                flex: 0 0 25% !important;
-            }
-            .about-body {
-                width: 75% !important;
-                flex: 0 0 75% !important;
-            }
-            .about-image { /* Keep image scaling fix */
-                width: 100% !important; 
-                max-width: 100% !important;
-                height: auto !important;
-            }
-          }
-          </style>
-
-# ====================================================
-# WEBSITE NAVIGATION
-# ====================================================
-website:
-  title: "Joel R. Pradines"
-  navbar:
-    right:
-      - href: index.qmd
-        text: Home
-      - href: publications.qmd
-        text: Publications
-      - text: Software
-        menu:
-          - text: "EdgeCount Package (R)"
-            href: https://joelRMath.github.io/EdgeCount/
-          - text: "Heparan Sulfate (Java)"
-            href: https://joelRMath.github.io/heparan-sulfate/
 ---
 
 ```{r, echo=FALSE, message=FALSE}
@@ -90,7 +33,7 @@ cite_pub <- function(key) {
 
 Modeling begins with formulating problems or phenomena at the level of mathematics (conceptualization). The subsequent analysis of quantitative results, or study of the model structure, can solve a problem or reveal mechanisms underlying a phenomenon.
 
-Modeling is a universal skill, utilized across fields from physics, chemistry and biology to economics and operations research. It is also the heart of statistics.
+Modeling is a universal skill, utilized across fields from physics, chemistry and biology to economics and operations research and even psychology. It is also the heart of statistics.
 
 Efficiency in mathematical modeling requires experience and willingness to learn, as Luenberger and Ye state[^note1]:
 
@@ -98,7 +41,7 @@ Efficiency in mathematical modeling requires experience and willingness to learn
 "Skill and good judgement, with respect to problem formulation and interpretation of results, is enhanced through concrete practical experience and a thorough understanding of relevant theory....Problem formulation (i.e., modeling) itself always involves a critical tradeoff between building a mathematical model sufficiently complex to accurately capture the problem description and building a model that is tractable."
 :::
 
-I am inherently multidisciplinary and enjoy tackling novel problem types. A rigorous, and also often creative, mathematical formulation allows for the translation of complex phenomena into actionable insights across diverse scientific domains.
+I am inherently multidisciplinary and enjoy tackling novel problem types. A rigorous, and also often creative, mathematical formulation allows for the translation of complex phenomena and problems into actionable insights across diverse scientific domains.
 
 ## Expertise and Interests
 
@@ -140,7 +83,7 @@ Statistical analyses.
 
 I enjoy fostering a culture of collaborative problem-solving.
 
-- **Mentorship**: Directly mentored two Postdoctoral researchers and three MIT Electrical Engineering interns.
+- **Mentorship**: Directly mentored Postdoctoral researchers and interns from MIT Electrical Engineering.
 
 - **Leadership**: Built and led a computational biology team, organized and led weekly brainstorming meetings with focus on learning and problem solving.
 

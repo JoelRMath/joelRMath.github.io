@@ -8,8 +8,10 @@ bibliography: references.bib
 csl: ieee.csl
 
 website:
-  title: "Joel R. P."
+  title: "Joel R. Pradines"
   navbar:
+    background: primary 
+    foreground: light
     right:
       - href: index.qmd
         text: Home
@@ -17,7 +19,7 @@ website:
         text: Publications
       - text: Software
         menu:
-          - text: "EdgeCount Package"
+          - text: "EdgeCount Package (R)"
             href: https://joelRMath.github.io/EdgeCount/
           - text: "Heparan Sulfate (Java)"
             href: https://joelRMath.github.io/heparan-sulfate/
@@ -29,6 +31,7 @@ website:
 format:
   html:
     theme: cosmo  
+    fontsize: 1.1em
     css: styles.css
     include-after-body: footer.html
     toc: true
