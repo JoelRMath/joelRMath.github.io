@@ -29,9 +29,9 @@ cite_pub <- function(key) {
 }
 ```
 
-## Mathematical Modeling and Data Analysis
+## Mathematical modeling and data analysis
 
-Modeling begins with formulating problems or phenomena at the level of mathematics (conceptualization). The subsequent analysis of quantitative results, or study of the model structure, can solve a problem or reveal mechanisms underlying a phenomenon.
+Modeling begins with formulating problems or phenomena at the level of concepts (conceptualization), following which the appropriate mathematical formalism is chosen. The subsequent analysis of quantitative results, or study of the model structure, can solve a problem or reveal mechanisms underlying a phenomenon.
 
 Modeling is a universal skill, utilized across fields from physics, chemistry and biology to economics and operations research and even psychology. It is also the heart of statistics.
 
@@ -43,9 +43,9 @@ Efficiency in mathematical modeling requires experience and willingness to learn
 
 I am inherently multidisciplinary and enjoy tackling novel problem types. A rigorous, and also often creative, mathematical formulation allows for the translation of complex phenomena and problems into actionable insights across diverse scientific domains.
 
-## Expertise and Interests
+## Examples of problem solving with mathematics
 
-A main thread in my work is developing computationally efficient and mathematically rigorous methodologies to analyze structure and dynamics in complex systems, as well as experimental or electronic data.
+
 
 #### Network Analysis
 
