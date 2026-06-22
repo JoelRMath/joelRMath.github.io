@@ -3,6 +3,109 @@
   --bs-content-max-width: 1800px;
 }
 
+/* --- Global Alignment Overrides --- */
+body { 
+  text-align: left !important; 
+  font-size: 1.1rem !important;
+}
+
+#title-block-header { 
+  text-align: left !important; 
+}
+
+.quarto-title .title {
+    font-size: 1.4rem !important; 
+    line-height: 1.1em;             
+    text-align: left !important; 
+    margin-top: 0;
+}
+
+/* --- Profile Header Layout (Single Column) --- */
+.profile-header {
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start; 
+  gap: 20px; 
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-links {
+  font-size: 1.1em;
+}
+
+.profile-links a {
+  text-decoration: none; 
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff; 
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- Content Container Overrides --- */
+.container {
+  max-width: 100% !important; 
+}
+
+.main-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* --- Component Styles --- */
+.clean-quote {
+    padding: 1.5em;
+    margin: 1em 0;
+    border-left: 3px solid #eee; 
+    font-style: italic;
+    color: #555;
+    background-color: #f9f9f9;
+}
+
+/* --- Citation Highlighting --- */
+div.csl-entry {
+  position: relative;
+  z-index: 1; 
+  scroll-margin-top: 80px; 
+}
+
+div.csl-entry:target::before {
+  content: "";
+  position: absolute;
+  
+  top: -5px;
+  bottom: -5px;
+  right: -10px;
+  left: -2em; 
+  
+  background-color: #ffeb3b; 
+  border-radius: 4px;
+  outline: 1px solid #fbc02d; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  
+  z-index: -1; 
+  animation: highlight-fade 2s ease-out;
+}
+
+@keyframes highlight-fade {
+  from { background-color: #ffeb3b; }
+  to { background-color: #fff9c4; } 
+}
+
+/* --- Back to Top Button --- */
 #back-to-top {
   position: fixed;
   bottom: 25px;
@@ -24,91 +127,4 @@
 #back-to-top:hover {
   background-color: #0056b3;
   transform: scale(1.1);
-}
-
-a {
-  text-decoration: none;
-  color: #007bff; 
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* --- Structural Layout Overrides (25%/75% Split) --- */
-
-@media (min-width: 992px) {
-  
-  .about-entity {
-      width: 25% !important; 
-      flex: 0 0 25% !important;
-  }
-  
-  .about-body {
-      width: 75% !important;
-      flex: 0 0 75% !important;
-  }
-
-  .about-image {
-      width: 100% !important; 
-      max-width: 100% !important;
-      height: auto !important;
-  }
-}
-
-div.csl-entry {
-  position: relative;
-  z-index: 1; 
-  scroll-margin-top: 80px; /* Keeps target visible below sticky navbar */
-}
-
-div.csl-entry:target::before {
-  content: "";
-  position: absolute;
-  
-  top: -5px;
-  bottom: -5px;
-  right: -10px;
-  left: -2em; /* Covers the numbered list indent [1] */
-  
-  background-color: #ffeb3b; /* Yellow */
-  border-radius: 4px;
-  outline: 1px solid #fbc02d; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
-  
-  z-index: -1; 
-  animation: highlight-fade 2s ease-out;
-}
-
-@keyframes highlight-fade {
-  from { background-color: #ffeb3b; }
-  to { background-color: #fff9c4; } 
-}
-
-.container {
-  max-width: 100% !important; 
-}
-
-.main-container {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.quarto-about-section {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.quarto-title .title {
-    font-size: 1.4rem !important; 
-    line-height: 1.1em;             
-}
-
-.clean-quote {
-    padding: 1.5em;
-    margin: 1em 0;
-    border-left: 3px solid #eee; /* Subtle line instead of a thick bar */
-    font-style: italic;
-    color: #555;
-    background-color: #f9f9f9;
 }

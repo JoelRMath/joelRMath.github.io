@@ -31,10 +31,11 @@ website:
 format:
   html:
     theme: cosmo  
-    fontsize: 1.1em
+    fontsize: 1.2em
     css: styles.css
     include-after-body: footer.html
     toc: true
+    toc-depth: 4
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: "Joel R. Pradines"
-
 page-layout: full
-
-about:
-  template: trestles
-  image: profile.jpg
-  links:
-    - icon: github
-      text: GitHub
-      href: https://github.com/joelRMath
-    - icon: envelope
-      text: Email
-      href: mailto:joelrmath@gmail.com
 toc: true
+toc-location: left
 ---
+
+::: {.profile-header}
+![](profile.jpg){.profile-img}
+
+::: {.profile-links}
+[<i class="bi bi-github"></i> GitHub](https://github.com/joelRMath)
+[<i class="bi bi-envelope"></i> Email](mailto:joelrmath@gmail.com)
+:::
+:::
 
 ```{r, echo=FALSE, message=FALSE}
 bib_lines <- readLines("references.bib")
@@ -43,9 +41,34 @@ Efficiency in mathematical modeling requires experience and willingness to learn
 
 I am inherently multidisciplinary and enjoy tackling novel problem types. A rigorous, and also often creative, mathematical formulation allows for the translation of complex phenomena and problems into actionable insights across diverse scientific domains.
 
+
 ## Examples of problem solving with mathematics
 
 
+### Example 1: Genesis of the Respiratory Rhythm
+
+
+Biological Problem: The Nucleus Tractus Solitarius (NTS) regulates respiratory rhythms via a purely excitatory circuit lacking pacemaker cells. In vitro experiments revealed this rhythm is intrinsic and fueled by TTX-resistant background synaptic noise.
+
+Conceptualization: The tissue was modeled as a sparse random graph of stochastic leaky integrate-and-fire neurons. To analyze the high-dimensional microscopic dynamics, the system was analytically reduced to a low-dimensional macroscopic deterministic map. This was achieved by framing the network as a nonlinear age-structured population model governed by a state-dependent Lefkovitch-style matrix.
+
+Insight: Stability analysis proved mean network connectivity $K$ is the critical bifurcation parameter. While dense networks ($K \ge K_c$) lock into hyper-synchronized tonic firing, sparse networks ($K < K_c$) act as excitable nonlinear amplifiers where microscopic noise continuously triggers macroscopic rhythmic bursting. This demonstrated that rhythmogenesis emerges naturally from the interplay of sparse topology and stochastic noise.
+
+Example 2: Coherence and Autonomous Stochastic Resonance
+
+Biological Problem: Building directly on the discovery that noise fuels rhythmogenesis, this work investigated how the regularity (coherence) of these bursts is optimized in autonomous networks lacking periodic external forcing.
+
+Conceptualization: Extending the macroscopic framework, the high-dimensional network of pulse-coupled stochastic neurons was further reduced to a simplified low-dimensional discrete map, explicitly parameterized by coupling strength ($J$) and noise variance ($\sigma^2$).
+
+Insight: Bifurcation analysis revealed a nonmonotonic response akin to autonomous stochastic resonance: an optimal noise level maximizes rhythmic coherence by shortening inter-burst recovery intervals, while excessive noise degrades fast intra-burst firing dynamics. Furthermore, the mathematical structure rigorously proved that the robust, globally stable oscillatory regime unique to sparse networks structurally collapses into fragile bistability when the network becomes fully connected.
+
+Example 3: Cellular Tuning and Network Bifurcation Structures
+
+The Biological Problem: Building upon the mechanisms of noise-driven rhythmogenesis and autonomous stochastic resonance, this work investigated how the intrinsic microscopic properties of individual cells—such as firing thresholds, post-spike recovery, and synaptic delays—dictate the macroscopic state of the entire network.
+
+Conceptualization: The macroscopic discrete map $\Phi$ was explicitly parameterized to incorporate these specific cellular traits. Rather than relying on computationally heavy $N$-dimensional simulations, rigorous bifurcation theory was applied to analytically map the system's global dynamics across the $(J, \sigma^2)$ parameter space.
+
+Insight: The bifurcation analysis generated a comprehensive "phase diagram" detailing the exact boundaries of saddle-node and Hopf bifurcations. It revealed how the network transitions between monostable (tonic firing), bistable, and purely oscillatory regimes. Furthermore, it proved that subtle physiological adjustments—such as altering the synaptic delay $d$ or decreasing after-spike hyperpolarization $U_m$—radically shift these topological boundaries. This mathematically established how biological networks dynamically tune their global behavioral states through minor cellular modulations.
 
 #### Network Analysis
 
